@@ -1,0 +1,107 @@
+.card.pick {
+    border: 0.5px solid gray;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    margin-bottom: 10%;
+    border-radius: 1%;
+}
+
+.card.pick:empty {
+    height: 0;
+}
+
+.card.pick:Hover {
+    border: 1px solid gray;
+    padding: 0;
+    margin: 0;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 15vmax;
+    padding: 6%;
+    border: 0.5px solid gray;
+}
+
+.card-block {
+    max-width: 100%;
+    padding: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: block;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card-title {
+    padding: 0;
+    margin: 0%;
+    max-width: 100%;
+    height: auto;
+    -webkit-line-clamp: 2;
+    height: 3.6em;
+    /* exactly three lines */
+    text-overflow: -o-ellipsis-lastline;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 14pt;
+}
+
+.close {
+    float: left;
+}
+
+@media (max-width: 768px) {
+    /*
+    .btn-responsive {
+        padding: 2px 4px;
+        font-size: 80%;
+        line-height: 1;
+        border-radius: 3px;
+    }
+    */
+    .card-title {
+        padding: 2px 4px;
+        font-size: 80%;
+        line-height: 1;
+        border-radius: 3px;
+    }
+    .card-text {
+        padding: 2px 4px;
+        font-size: 80%;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card img {
+        max-height: 50vmax;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 90%;
+        line-height: 1.2;
+    }
+    .card-title {
+        padding: 4px 9px;
+        font-size: 90%;
+        line-height: 1.2;
+        font-size: 1vw;
+    }
+    .card-text {
+        padding: 4px 9px;
+        font-size: 90%;
+        line-height: 1.2;
+        font-size: 1vw;
+    }
+}
